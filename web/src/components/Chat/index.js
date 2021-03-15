@@ -30,10 +30,6 @@ const Chat = (props) => {
         setMessage('');
     }
 
-    
-   
-    
-
     return(
         <main className="content">
             <Link to={props.back}>
@@ -46,11 +42,6 @@ const Chat = (props) => {
                         <p className={props.styles}>{messages.message}</p>
                     ))}
                 </div>
-
-                <script>
-    var objDiv = document.getElementById("messages");
-    objDiv.scrollTop = objDiv.scrollHeight;
-   </script>
 
                 <form onSubmit={handleSendMsg} className="submit-message">
                     <textarea 
