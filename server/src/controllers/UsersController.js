@@ -7,12 +7,18 @@ class UsersController {
             email
         } = req.body;
 
-        await db('users').insert({
-            name,
-            email
-        });
+        const user = await db('users').where('email', email).first();
 
-        return res.status(201).send();
+        if(!user) {
+            await db('users').insert({
+                name,
+                email
+            });
+        }
+        
+        const userDT = await db.select('*').from('users').where('email', email);
+
+        return res.json(userDT).status(201).send();
     }
 }
 

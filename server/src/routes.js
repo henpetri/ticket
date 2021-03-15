@@ -9,6 +9,9 @@ const usersControllers = new UsersController();
 const ticketsControllers = new TicketsController();
 const messagesController = new MessagesController();
 
+// Visualizar
+routes.get('/tickets/all', ticketsControllers.count);                // Conta todos os tickets que foram feitos no site
+
 // Ações do usuário
 routes.post('/users', usersControllers.create);                     // Criar usuário
 routes.post('/tickets/:id', ticketsControllers.create);             // Criar ticket

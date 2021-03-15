@@ -1,3 +1,4 @@
+const { json } = require('express');
 const db =  require('../database/connection');
 
 class TicketsController {
@@ -37,6 +38,14 @@ class TicketsController {
         const tickets = await db('tickets');
 
         return res.json(tickets);
+    }
+
+    async count(req, res) {
+        const totalTickets = await db('tickets').count('* as total');
+
+        const { total } = totalTickets[0];
+
+        return res.json({ total });
     }
 }
 

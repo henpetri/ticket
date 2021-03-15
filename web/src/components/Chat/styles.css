@@ -1,0 +1,66 @@
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-back {
+  margin-right: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  width: 50px;
+}
+
+.chat {
+  border: 1px solid black;
+  width: 700px;
+  height: 390px;
+  display: flexbox;
+  align-items: flex-end;
+}
+
+.messages {
+  height: 290px;
+  overflow: auto;
+  scroll-behavior: auto;
+}
+
+.messages p {
+  font-size: 16px;
+  margin: 0 5px;
+  padding: 0 10px;
+  border-bottom: 2px solid black;
+  border-radius: 10%;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.admin {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.submit-message {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  font-size: 16px;
+  background-color: lightgray;
+  padding: 0.2rem;
+  resize: none;
+  outline: none;
+}
+
+.btn-submit {
+  height: 50px;
+  margin-left: 2px;
+  outline: none;
+}

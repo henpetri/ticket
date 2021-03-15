@@ -1,0 +1,25 @@
+.content-tickets {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.tickets {
+    width: 800px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-talk {
+    margin-left: 1rem;
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+span {
+    margin-right: 10px;
+}

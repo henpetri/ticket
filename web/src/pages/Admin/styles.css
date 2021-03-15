@@ -1,0 +1,10 @@
+.cnt-tickets {
+    margin-top: 2rem;
+}
+
+.tickets-view {
+    margin: 0 20rem;
+    margin-top: 2rem;
+    height: 28rem;
+    overflow: auto;
+}
